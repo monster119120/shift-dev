@@ -21,14 +21,14 @@ def main():
 
     dataset = SHIFTDataset(
         data_root="./SHIFT_dataset/",
-        split="train",
+        split="val",
         keys_to_load=[
             Keys.images,
             Keys.intrinsics,
             Keys.boxes2d,
             Keys.boxes2d_classes,
-            Keys.boxes2d_track_ids,
-            Keys.segmentation_masks,
+#             Keys.boxes2d_track_ids,
+#             Keys.segmentation_masks,
         ],
         views_to_load=["front"],
         backend=ZipBackend(),  # also supports HDF5Backend(), FileBackend()
@@ -52,7 +52,7 @@ def main():
                 print(f"{k}: {data.shape}")
             else:
                 print(f"{k}: {data}")
-        break
+#         break
 
 
 if __name__ == "__main__":
