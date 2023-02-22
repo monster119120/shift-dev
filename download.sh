@@ -2,6 +2,7 @@
 
 # Install dependency
 python3 -m pip install -r requirements.txt
+pip install torchshow
 
 # Example commands to downaload from all 1fps images and convert them into hdf5.
 # python3 download.py --view "all" --group "all" --split "all" --framerate "[images]" ./shift_dataset/
