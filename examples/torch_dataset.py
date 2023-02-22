@@ -5,6 +5,7 @@ import sys
 
 import torch
 from torch.utils.data import DataLoader
+from torchvision.transforms.functional import to_pil_image
 
 # Add the root directory of the project to the path. Remove the following two lines
 # if you have installed shift_dev as a package.
