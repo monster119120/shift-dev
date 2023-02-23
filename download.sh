@@ -9,13 +9,13 @@ pip install torchshow
 # python3 -m shift_dev.io.to_hdf5 "./shift_dataset/**/*.zip" --zip -j 4
 
 
-# python download.py --view  "[front,]"   --group "[img, det_2d]"  --split "[val,]"  --framerate "[images, videos]"   --shift "continuous/100x" ./SHIFT_dataset              
-# python download.py --view  "[front,]"   --group "[img, det_2d]"  --split "[val,]"  --framerate "[images, videos]"   --shift "continuous/10x" ./SHIFT_dataset     
-# python download.py --view  "[front,]"   --group "[img, det_2d]"  --split "[val,]"  --framerate "[images, videos]"   --shift "continuous/1x" ./SHIFT_dataset  
+# python download.py --view  "[front]"   --group "[img, det_2d]"  --split "[val,]"  --framerate "[images, videos]"   --shift "continuous/100x" ./SHIFT_dataset              
+# python download.py --view  "[front]"   --group "[img, det_2d]"  --split "[val,]"  --framerate "[images, videos]"   --shift "continuous/10x" ./SHIFT_dataset     
+# python download.py --view  "[front]"   --group "[img, det_2d]"  --split "[val,]"  --framerate "[images, videos]"   --shift "continuous/1x" ./SHIFT_dataset  
 
 
 
-python download.py --view  "[front,]"   --group "[img, det_2d]"  --split "[train, val]"  --framerate "[images, videos]"   --shift "discrete" ./SHIFT_dataset      
+python download.py --view  "[front]"   --group "[img, det_2d]"  --split "[train, val]"  --framerate "[images, videos]"   --shift "discrete" ./SHIFT_dataset      
 
 
 
