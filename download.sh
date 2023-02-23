@@ -19,5 +19,5 @@ python download.py --view  "[front]"   --group "[img, det_2d]"  --split "[train,
 
 
 
-!unzip ./shift_dataset/discrete/images/val/front/img.zip -d ./shift_dataset/discrete/images/val/front
-!tar -xvf ./shift_dataset/discrete/videos/val/front/img.tar tar xf file.tar -C ./shift_dataset/discrete/videos/val/front/
+unzip ./shift_dataset/discrete/images/val/front/img.zip -d ./shift_dataset/discrete/images/val/front
+tar -xvf ./shift_dataset/discrete/videos/val/front/img.tar tar xf file.tar -C ./shift_dataset/discrete/videos/val/front/
