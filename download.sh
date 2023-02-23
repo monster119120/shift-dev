@@ -15,7 +15,7 @@ pip install torchshow
 
 
 
-python download.py --view  "[front]"   --group "[img, det_2d]"  --split "[train, val]"  --framerate "[images]"   --shift "discrete" ./SHIFT_dataset      
+python download.py --view  "[front]"   --group "[img, det_2d, seq]"  --split "[val]"  --framerate "[images, videos]"   --shift "continuous/100x" ./SHIFT_dataset      
 
 
 
