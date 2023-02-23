@@ -15,12 +15,12 @@ pip install torchshow
 
 
 
-python download.py --view  "[front]"   --group "[img, det_2d, seq]"  --split "[val]"  --framerate "[images, videos]"   --shift "discrete" ./SHIFT_dataset      
+python download.py --view  "[front]"   --group "[img, det_2d, seq]"  --split "[val]"  --framerate "[images]"   --shift "discrete" ./SHIFT_dataset      
 unzip ./SHIFT_dataset/discrete/images/val/front/img.zip -d ./SHIFT_dataset/discrete/images/val/front
 tar -xvf ./SHIFT_dataset/discrete/videos/val/front/img.tar -C ./SHIFT_dataset/discrete/videos/val/front/
 
 
 
-python download.py --view  "[front]"   --group "[img, det_2d, seq]"  --split "[val]"  --framerate "[images, videos]"   --shift "continuous/100x" ./SHIFT_dataset      
+python download.py --view  "[front]"   --group "[img, det_2d, seq]"  --split "[val]"  --framerate "[images]"   --shift "continuous/100x" ./SHIFT_dataset      
 unzip ./SHIFT_dataset/continuous/images/100x/val/front/img.zip -d ./SHIFT_dataset/continuous/images/100x/val/front/
 tar -xvf ./SHIFT_dataset/continuous/videos/100x/val/front/img.tar -C ./SHIFT_dataset/continuous/videos/100x/val/front/
