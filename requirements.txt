@@ -2,7 +2,7 @@ Flask
 threadpoolctl
 h5py
 matplotlib
-numpy=
+numpy
 opencv_python
 Pillow
 pydantic
