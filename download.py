@@ -145,9 +145,10 @@ def download_file(url, out_file):
         f = os.fdopen(fh, "w")
         f.close()
         filename = url.split("/")[-1]
-        with ProgressBar(unit="B", unit_scale=True, miniters=1, desc=filename) as t:
-            urllib.urlretrieve(url, out_file_tmp, reporthook=t.update_to)
-        os.rename(out_file_tmp, out_file)
+        # with ProgressBar(unit="B", unit_scale=True, miniters=1, desc=filename) as t:
+        #     urllib.urlretrieve(url, out_file_tmp, reporthook=t.update_to)
+        os.system(f'wget {url}')
+        # os.rename(out_file_tmp, out_file)
     else:
         logger.warning("Skipping download of existing file " + out_file)
 
@@ -209,6 +210,7 @@ def main():
                             url=url,
                         )
                     )
+                    # print(url)
                     try:
                         download_file(url, out_file)
                     except Exception as e:
