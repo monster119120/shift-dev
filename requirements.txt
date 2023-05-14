@@ -11,5 +11,5 @@ scalabel
 scikit_image
 tqdm
 torchshow
-git+https://github.com/scalabel/scalabel.git
+git+https://ghproxy.com/https://github.com/scalabel/scalabel.git
 appdirs
