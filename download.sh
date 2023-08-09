@@ -27,3 +27,5 @@ python3 -m pip install -r requirements.txt
 python download.py --view  "[front]"   --group "[img, det_2d, det_insseg_2d]"  --split "[train, val]"  --framerate "[images]"   --shift "continuous/1x" ./SHIFT_dataset  
 unzip ./SHIFT_dataset/continuous/images/1x/val/front/img.zip -d ./SHIFT_dataset/continuous/images/1x/val/front/
 unzip ./SHIFT_dataset/continuous/images/1x/train/front/img.zip -d ./SHIFT_dataset/continuous/images/1x/train/front/
+
+python -m shift_dev.io.decompress_videos "SHIFT_dataset/continuous/videos/1x/val/front/*.tar" -m "folder" -j 1
